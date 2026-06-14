@@ -1,0 +1,26 @@
+# Dependencies
+frontend/node_modules/
+admin-frontend/node_modules/
+node_modules/
+
+# Python venv
+backend/venv/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.Python
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log

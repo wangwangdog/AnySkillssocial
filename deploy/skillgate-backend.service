@@ -1,0 +1,14 @@
+[Unit]
+Description=SkillGate 后端 API (FastAPI :9902)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/dogzi/.openclaw/workspace/skillgate/backend
+ExecStart=/home/dogzi/.openclaw/workspace/skillgate/backend/.venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 9902
+Restart=on-failure
+RestartSec=3
+Environment=PYTHONPATH=/home/dogzi/.openclaw/workspace/skillgate/backend
+
+[Install]
+WantedBy=default.target
